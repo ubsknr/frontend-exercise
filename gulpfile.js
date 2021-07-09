@@ -7,7 +7,7 @@ const minifyJS = require("gulp-uglify");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const del = require("del");
-const fileName="7-Cookie-Banner";
+const fileName="8-Color_Palette_Generator";
 
 //src/2-linkedin-redesign/**/
 gulp.task("browser-sync", () => {
