@@ -7,7 +7,7 @@ const minifyJS = require("gulp-uglify");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const del = require("del");
-const fileName="8-Color_Palette_Generator";
+const fileName="9-Job_Page_Components";
 
 //src/2-linkedin-redesign/**/
 gulp.task("browser-sync", () => {
