@@ -7,7 +7,7 @@ const minifyJS = require("gulp-uglify");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const del = require("del");
-const fileName="9-Job_Page_Components";
+const fileName="9.1-Website-Component";
 
 //src/2-linkedin-redesign/**/
 gulp.task("browser-sync", () => {
