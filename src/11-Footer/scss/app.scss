@@ -1,0 +1,150 @@
+@import "reset";
+@import "https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap";
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Muli;
+  -webkit-overflow-scrolling: touch;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  background: #F7F8FC;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer{
+  margin-top: auto;
+  padding: 75px;
+  border-top: 5px solid #10182F;
+  background-color: #FFF;
+  box-shadow: 0 10px 76px -12px rgba(#001D93 , .1);
+ 
+  .footer-top{
+    display: flex;
+    align-items: flex-start;
+
+    .logo{
+      display: flex;
+      align-items: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #10182F;
+      margin-right: 50px;
+    }
+
+    .footer-menu{
+      margin-left: auto;
+      display: flex;
+
+      nav{
+        min-width: 180px;
+        margin-right: 40px;
+
+        h5{
+          font-size: 14px;
+          font-weight: bold;
+          color: #222C46;
+          margin-bottom: 25px;
+          text-transform: uppercase;
+        }
+
+        ul{
+
+          li{
+            line-height: 40px;
+            a{
+              display: inline-block;
+              font-size: 16px;
+              color: #545D7A;
+              z-index: 1;
+              position: relative;
+              &::before{
+                content: "";
+                height: 20px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(#545D7A, .1);
+                width: 0;
+                transition: 300ms all;
+                z-index: -1;
+              }
+              &:hover{
+                color: #222c46;
+                &::before{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom{
+    display: flex;
+    padding-top: 85px;
+    justify-content:space-between;
+    align-items: center;
+
+    .footer-menu{
+      ul{
+        display: flex;
+
+        li{
+          margin: 0 25px;
+          a {
+            display: block;
+            font-size: 14px;
+            color: #545D7A;
+          }
+        }
+      }
+    }
+
+    p{
+      font-size: 14px;
+      color: #545D7A;
+    }
+
+    .footer-social{
+      display: flex;
+      li{
+        
+        a{
+          width: 48px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img{
+            opacity: .55;
+            transition: 300ms oppocity;
+          }
+
+          &:hover{
+            img{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
