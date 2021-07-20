@@ -7,7 +7,7 @@ const minifyJS = require("gulp-uglify");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const del = require("del");
-const fileName="11-Footer";
+const fileName="12-TrialCard";
 
 //src/2-linkedin-redesign/**/
 gulp.task("browser-sync", () => {
