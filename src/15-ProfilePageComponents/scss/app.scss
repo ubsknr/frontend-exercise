@@ -1,0 +1,171 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  -webkit-overflow-scrolling: touch;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background: #161e29;
+  padding: 50px;
+}
+
+.component {
+  &--followers {
+    background: #1b2431;
+    border-radius: 10px;
+    padding: 30px;
+    width: 412px;
+    box-shadow: 0 10px 20px -20px #081323;
+    margin-bottom: 50px;
+
+    ul {
+      display: flex;
+      margin: 0 -10px;
+
+      li {
+        flex: 1 1 auto;
+        margin: 0 10px;
+
+        a {
+          background: #161e29;
+          color: #c9cedf;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 7px 10px;
+          border-radius: 5px;
+          
+
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  &--user-info{
+    background: #1b2431;
+    border-radius: 10px;
+    padding: 39px;
+    width: 344px;
+    box-shadow: 0 10px 20px -20px #081323;
+    margin-bottom: 50px;
+    ul{
+      li{
+        font-size: 16px;
+        color: #c9cedf;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        a{
+          color: #587DFB;
+        }
+
+        .icon{
+          text-align: center;
+          width: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &--team{
+    background: #1b2431;
+    border-radius: 10px;
+    padding: 40px 40px 50px;
+    width: 503px;
+    box-shadow: 0 10px 20px -20px #081323;
+    margin-bottom: 50px;
+
+    h5{
+      font-size: 22px;
+      color: #C9CEDF;
+      margin-bottom: 40px;
+    }
+
+    ul{
+      li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .team{
+          display: flex;
+          align-items: center;
+          color: #C9CEDF;
+          font-size: 16px;
+
+          img{
+            margin-right: 14px;
+          }
+        }
+      }
+    }
+
+    .team-members{
+      display: flex;
+      flex-direction: row-reverse;
+      
+      a{
+        margin-right: -10px;
+        
+        img{
+          border: 2px solid #1b2431;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  &--skills{
+    width: 434px;
+    h5{
+      color: #C9CEDF;
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: normal;
+    }
+    ul{
+      display: flex;
+      margin: -5px;
+      flex-wrap: wrap;
+
+      li{
+        margin: 5px;
+        a{
+          color: #C9CEDF;
+          display: block;
+          padding: 15px 25px;
+          border-radius: 10px;
+          font-size: 16px;
+          background: #1B2431;
+          box-shadow: 0 10px 20px -20px #081323;
+          transition: 300ms background-color;
+          &:hover{
+            background: lighten(#1B2431, 5%);
+          }
+        }
+      }
+    }
+  }
+}
